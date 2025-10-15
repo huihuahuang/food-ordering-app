@@ -40,8 +40,15 @@ INSTALLED_APPS = [
     # Customized apps
     "corsheaders",
     "rest_framework",
+    "authusers",
+    "menu",
+    "operations",
+    "orders",
 
 ]
+
+# Default user model
+AUTH_USER_MODEL = 'authusers.User'
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -112,7 +119,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = "en-us"
 
-TIME_ZONE = "UTC"
+# Use easten time (ET)
+TIME_ZONE = "America/New_York"
 
 USE_I18N = True
 
