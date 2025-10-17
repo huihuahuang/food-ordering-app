@@ -24,4 +24,6 @@ urlpatterns = [
     # JWT settings
     path("api/token/", TokenObtainPairView.as_view(), name="get_token"),
     path("api/token/refresh", TokenRefreshView.as_view(), name="refresh"),
+    # User endpoint
+    path("api/v1/users/", include("authusers.api.urls"))
 ]
