@@ -1,33 +1,6 @@
 from rest_framework import serializers
-from ..models import  Allergen, MenuCategory, MenuItem, ItemAllergen
+from ..models import  Allergen, MenuCategory, MenuItem
 
-
-class MenuCategorySerializer(serializers.ModelSerializer):
-    """Serializer for menu category model - superuser only"""
-    item_count = serializers.SerializerMethodField()
-    class Meta:
-        model = MenuCategory
-        fields = ["id", "name", "sort_order", "item_count"]
-        read_only_fields = ["id"]
-    
-    def get_item_count(self, obj):
-        """Return the number of items in each category"""
-        # User the related name in menu item (reverse relationship)
-        return obj.items.count()
-    
-
-class AllergenSerializer(serializers.ModelSerializer):
-    """Serializer for allergen model - superuser only"""
-    allergen_count = serializers.SerializerMethodField()
-    class Meta:
-        model = Allergen
-        fields = ["id", "name", "allergen_count"]
-        read_only_fields = ["id"]
-    
-    def get_allergen_count(self, obj):
-        """Return the number of items in each allergen"""
-        return obj.menu_items.count()
-    
 
 class MenuItemSerializer(serializers.ModelSerializer):
     """Serializer for menu items"""
@@ -59,23 +32,6 @@ class MenuItemSerializer(serializers.ModelSerializer):
                    "description", "is_available", "allergen_ids", "allergens"]          
         read_only_fields = ["id"]
     
-    
-class MenuItemImageSerializer(serializers.ModelSerializer):
-    """Image Serializer for menu item - superuser only"""
-    
-    class Meta:
-        model = MenuItem
-        fields = ["image"]
-
-
-class ItemAllergenSerializer(serializers.ModelSerializer):
-    """Allergens of each item - superuser only"""
-    item_name = serializers.CharField(source="item.name")
-    allergen_name = serializers.CharField(source="allergen.name")
-    class Meta:
-        model = ItemAllergen
-        fields = ["id", "item", "item_name", "allergen", "allergen_name"]
-
 
 class MenuItemPublicSerializer(serializers.ModelSerializer):
     """Public serializer for menu items - read-only"""
@@ -88,5 +44,6 @@ class MenuItemPublicSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = MenuItem
-        fields = ["id", "name", "category_name", "price", "description", "image", "allergens"]
+        fields = ["id", "name", "category_name", "price", "description", "image", 
+                  "is_available", "allergens"]
         read_only_fields = ["id"]
