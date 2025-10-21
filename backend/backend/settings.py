@@ -156,6 +156,8 @@ REST_FRAMEWORK = {
         "rest_framework.throttling.UserRateThrottle",
     ],
     'DEFAULT_THROTTLE_RATES': {
+        'anon': '1000/day',  # Anonymous users: 100 requests per day
+        'user': '1500/day',  # Authenticated users: 1000 requests per day
         'password_change': '2/day',   # Only 2 times per day
     }
 }
@@ -166,14 +168,9 @@ SIMPLE_JWT = {
     "REFRESH_TOKEN_LIFETIME": timedelta(days=config("REFRESH_TOKEN_LIFETIME", cast=int))
 }
 
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
-
-STATIC_URL = 'static/'
-
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static")
-]
 
 # Meida file configuration
 MEDIA_URL = '/media/'
