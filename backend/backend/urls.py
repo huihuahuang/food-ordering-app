@@ -25,9 +25,11 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     # JWT settings
     path("api/token/", TokenObtainPairView.as_view(), name="get_token"),
-    path("api/token/refresh", TokenRefreshView.as_view(), name="refresh"),
+    path("api/token/refresh/", TokenRefreshView.as_view(), name="refresh"),
     # User endpoint
     path("api/v1/users/", include("authusers.api.urls")),
     # Menu endpoint
-    path("api/v1/menu/", include("menu.api.urls"))
+    path("api/v1/menu/", include("menu.api.urls")),
+    # Restaurant endpoint
+    path("api/v1/restaurant/", include("operations.api.urls"))
 ]  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
