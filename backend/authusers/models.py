@@ -1,6 +1,5 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
-from django.utils.text import slugify
 from phonenumber_field.modelfields import PhoneNumberField
 class User(AbstractUser):
     """
@@ -15,7 +14,6 @@ class User(AbstractUser):
     # Login with email
     USERNAME_FIELD = "email" 
     REQUIRED_FIELDS = ["username"]
-    slug = models.SlugField(unique=True, blank=True)
     
     class Meta:
         verbose_name = 'User'
@@ -24,11 +22,6 @@ class User(AbstractUser):
     def __str__(self):
         """Return user's full name or email prefix."""
         return self.get_full_name() or self.email.split("@")[0]
-    
-    def save(self, *args, **kwargs):
-        if not self.slug:
-            self.slug = slugify(self.username)
-        super().save(*args, **kwargs)  
 
 
 
