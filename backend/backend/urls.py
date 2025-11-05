@@ -31,5 +31,7 @@ urlpatterns = [
     # Menu endpoint
     path("api/v1/menu/", include("menu.api.urls")),
     # Restaurant endpoint
-    path("api/v1/restaurant/", include("operations.api.urls"))
+    path("api/v1/restaurant/", include("operations.api.urls")),
+    # Staff order management endpoint
+    path("api/v1/staff/", include("orders.api.urls")),
 ]  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
