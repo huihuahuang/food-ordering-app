@@ -1,6 +1,7 @@
 from django.contrib.auth.models import AbstractUser
-from phonenumber_field.modelfields import PhoneNumberField
 from django.db import models
+from django.utils.text import slugify
+from phonenumber_field.modelfields import PhoneNumberField
 class User(AbstractUser):
     """
     Columns: username, is_staff=False, is_superuser=False, date_joined,
@@ -10,11 +11,12 @@ class User(AbstractUser):
     email = models.EmailField(blank=False, unique=True)
     # Use django-phonenumber-field module to validate us numbers automaically
     phone = PhoneNumberField(blank=True, region="US")
-
+    # Slug user name for the REST URL
     # Login with email
     USERNAME_FIELD = "email" 
-    REQUIRED_FIELDS = ["username"]  
-
+    REQUIRED_FIELDS = ["username"]
+    slug = models.SlugField(unique=True, blank=True)
+    
     class Meta:
         verbose_name = 'User'
         verbose_name_plural = 'Users'
@@ -22,5 +24,11 @@ class User(AbstractUser):
     def __str__(self):
         """Return user's full name or email prefix."""
         return self.get_full_name() or self.email.split("@")[0]
+    
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = slugify(self.username)
+        super().save(*args, **kwargs)  
+
 
 
