@@ -101,9 +101,9 @@ class RestaurantSetting(models.Model):
         
         All orders must be placed before the last call.
         """
-        tz = timezone.get_current_timezone()
         today = timezone.localdate()  
-        close_datetime = tz.localize(datetime.combine(today, self.close_time))
+        naive_close_datetime = datetime.combine(today, self.close_time)
+        close_datetime = timezone.make_aware(naive_close_datetime)
         last_call_datetime = close_datetime - timedelta(minutes=self.default_ready_minutes)
         return last_call_datetime.time()
     

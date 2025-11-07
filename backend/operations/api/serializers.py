@@ -80,14 +80,13 @@ class RestaurantSettingSerializer(serializers.ModelSerializer):
         if (open_time is not None and 
             close_time is not None and 
             default_ready is not None):
-            tz = timezone.get_current_timezone()
-            today = timezone.localdate()  
-            close_datetime = tz.localize(datetime.combine(today, close_time))
+            today = timezone.localdate()
+            naive_close_datetime = datetime.combine(today, close_time)
+            close_datetime = timezone.make_aware(naive_close_datetime)
             last_call_datetime = close_datetime - timedelta(minutes=default_ready)
             if last_call_datetime.time() < open_time:
                 errors["last_call"] = "Must be between open time and close time"
 
-        
         if errors:
             raise serializers.ValidationError(errors)
         
