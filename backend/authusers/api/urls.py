@@ -1,23 +1,41 @@
 from django.urls import path
-from rest_framework.routers import DefaultRouter
-from rest_framework_nested import routers as nested_routers
 from .views import CreateUserView, UpdatePasswordView, UpdateRetrieveUserInfoView
 from orders.api.views import CustomerOrderViewSet
 
 auth_urlpatterns = [
-    # API end points
+    # API for account management
     path("register/", CreateUserView.as_view(), name="create-user"),
     path("me/", UpdateRetrieveUserInfoView.as_view(), name="current-user"),
     path("me/password/", UpdatePasswordView.as_view(), name="update-password")
 ]
 
-# Nested router for orders under users
-# This will create routes like /users/{username}/orders/
-router = DefaultRouter()
-# This creates the pattern: /{username}/orders/
-users_orders_router = nested_routers.SimpleRouter()
-# (?P<username>...) accessible via kwargs["username"]
-users_orders_router.register(r'(?P<username>[^/.]+)/orders', CustomerOrderViewSet, basename='user-orders')
+# Manual URL patterns for customer orders management
+order_urlpatterns = [
+    # List and create orders
+    path(
+        "<str:username>/orders/",
+        CustomerOrderViewSet.as_view({"get": "list", "post": "create"}),
+        name="user-orders-list"
+    ),
+    # Order statistics
+    path(
+        "<str:username>/orders/statistics/",
+        CustomerOrderViewSet.as_view({"get": "statistics"}),
+        name="user-orders-statistics"
+    ),
+    # Order detail
+    path(
+        "<str:username>/orders/<int:pk>/",
+        CustomerOrderViewSet.as_view({"get": "retrieve"}),
+        name="user-orders-detail"
+    ),
+    # Cancel order
+    path(
+        "<str:username>/orders/<int:pk>/cancel/",
+        CustomerOrderViewSet.as_view({"post": "cancel"}),
+        name="user-orders-cancel"
+    ),
+]
 
-
-urlpatterns = auth_urlpatterns + users_orders_router.urls
+# Combine all URL patterns
+urlpatterns = auth_urlpatterns + order_urlpatterns
