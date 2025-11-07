@@ -66,6 +66,27 @@ class Order(models.Model):
 
     def save(self, *args, **kwargs):
         """Override save to ensure the validation runs"""
+        if self.pk:
+            old = type(self).objects.only("status","completed_at","canceled_at").get(pk=self.pk)
+
+            # -> COMPLETE
+            if old.status != self.Status.COMPLETE and self.status == self.Status.COMPLETE and not self.completed_at:
+                self.completed_at = timezone.now()
+                if self.canceled_at:  # keep your DB constraint happy
+                    self.canceled_at = None
+
+            # -> CANCELED
+            if old.status != self.Status.CANCELED and self.status == self.Status.CANCELED and not self.canceled_at:
+                self.canceled_at = timezone.now()
+                if self.completed_at:
+                    self.completed_at = None
+            else:
+                now = timezone.now()
+                if self.status == self.Status.COMPLETE and not self.completed_at:
+                    self.completed_at = now
+                if self.status == self.Status.CANCELED and not self.canceled_at:
+                    self.canceled_at = now
+                    
         self.full_clean()  # This ensures clean() always runs
         super().save(*args, **kwargs)
 

@@ -204,9 +204,12 @@ class OrderStatusUpdateSerializer(serializers.ModelSerializer):
         model = Order
         fields = [
             "id",
-            "status"
+            "status",
+            "completed_at",
+            "canceled_at",
+            "cancel_reason"
         ]
-        read_only_fields = ["id"]
+        read_only_fields = ["id", "completed_at", "canceled_at", "cancel_reason"]
 
     def validate_status(self, value):
         instance = self.instance
