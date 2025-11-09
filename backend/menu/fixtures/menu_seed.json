@@ -1,0 +1,987 @@
+[
+  {
+    "model": "menu.menucategory",
+    "fields": {
+      "name": "Appetizer",
+      "sort_order": 1
+    }
+  },
+  {
+    "model": "menu.menucategory",
+    "fields": {
+      "name": "Sushi",
+      "sort_order": 2
+    }
+  },
+  {
+    "model": "menu.menucategory",
+    "fields": {
+      "name": "Sashimi",
+      "sort_order": 3
+    }
+  },
+  {
+    "model": "menu.menucategory",
+    "fields": {
+      "name": "Makimono",
+      "sort_order": 4
+    }
+  },
+  {
+    "model": "menu.menucategory",
+    "fields": {
+      "name": "Combination",
+      "sort_order": 5
+    }
+  },
+  {
+    "model": "menu.menucategory",
+    "fields": {
+      "name": "Dessert",
+      "sort_order": 6
+    }
+  },
+  {
+    "model": "menu.allergen",
+    "fields": { "name": "Soy" }
+  },
+  {
+    "model": "menu.allergen",
+    "fields": { "name": "Gluten" }
+  },
+  {
+    "model": "menu.allergen",
+    "fields": { "name": "Sesame" }
+  },
+  {
+    "model": "menu.allergen",
+    "fields": { "name": "Fish" }
+  },
+  {
+    "model": "menu.allergen",
+    "fields": { "name": "Shellfish" }
+  },
+  {
+    "model": "menu.allergen",
+    "fields": { "name": "Egg" }
+  },
+  {
+    "model": "menu.allergen",
+    "fields": { "name": "Dairy" }
+  },
+  {
+    "model": "menu.allergen",
+    "fields": { "name": "No common allergens" }
+  },
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "Edamame",
+      "category": 1,
+      "price": "5.00",
+      "description": "Steamed soybeans sprinkled with sea salt",
+      "is_available": true,
+      "image": "menu_images/edamame.jpg"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "Gyoza",
+      "category": 1,
+      "price": "7.00",
+      "description": "Pan-fried dumplings filled with pork and vegetables with soy dipping sauce",
+      "is_available": true,
+      "image": "menu_images/gyoza.jpg"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "Agedashi Tofu",
+      "category": 1,
+      "price": "7.00",
+      "description": "Lightly fried tofu in soy-dashi broth with bonito flakes",
+      "is_available": true,
+      "image": "menu_images/agedashi_tofu.jpg"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "Shishito Peppers",
+      "category": 1,
+      "price": "8.00",
+      "description": "Chared Japanese  peppers with sea salt and lemon",
+      "is_available": true,
+      "image": "menu_images/shishito_peppers.jpg"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "Tuna Tataki",
+      "category": 1,
+      "price": "12.00",
+      "description": "Seared tuna slices with ponzu sauce and scallions",
+      "is_available": true,
+      "image": "menu_images/tuna_tataki.jpg"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "Salmon Carpaccio",
+      "category": 1,
+      "price": "11.00",
+      "description": "Thin salmon slices drizzled with yuzu-soy and sesame oil",
+      "is_available": true,
+      "image": "menu_images/salmon_carpaccio.jpg"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "California Roll",
+      "category": 4,
+      "price": "8.00",
+      "description": "Crab mix, avocado, cucumber, and sesame seeds",
+      "is_available": true,
+      "image": "menu_images/california_maki.jpg"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "Spicy Tuna Roll",
+      "category": 4,
+      "price": "9.00",
+      "description": "Tuna with spicy mayo and scallions",
+      "is_available": true,
+      "image": "menu_images/spicy_tuna_maki.jpg"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "Salmon Avocado Roll",
+      "category": 4,
+      "price": "9.00",
+      "description": "Fresh salmon and ripe avocado",
+      "is_available": true,
+      "image": "menu_images/salmon_avocado_maki.jpg"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "Eel Cucumber Roll",
+      "category": 4,
+      "price": "10.00",
+      "description": "Grilled eel with cucumber and eel sauce",
+      "is_available": true,
+      "image": "menu_images/eel_cucumber_maki.jpg"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "Rainbow Roll",
+      "category": 4,
+      "price": "13.00",
+      "description": "California roll toppped with assorted sashimi",
+      "is_available": true,
+      "image": "menu_images/rainbow_maki.jpg"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "Dragon Roll",
+      "category": 4,
+      "price": "14.00",
+      "description": "Shrimp tempura inside, avocado and eel on top with sweet soy glaze",
+      "is_available": true,
+      "image": "menu_images/dragon_maki.jpg"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "Vegetable Roll",
+      "category": 4,
+      "price": "8.00",
+      "description": "Cucumber, avvocado, oshinko, and carrot",
+      "is_available": true,
+      "image": "menu_images/vegetable_maki.jpg"
+    }
+  },
+
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "Tuna (Maguro)",
+      "category": 2,
+      "price": "7.00",
+      "description": "Lean tuna nigiri",
+      "is_available": true,
+      "image": "menu_images/tuna_nigiri.jpg"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "Tuna (Maguro)",
+      "category": 3,
+      "price": "9.00",
+      "description": "Learn tuna sashimi",
+      "is_available": true,
+      "image": "menu_images/tuna_sashimi.jpg"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "Salmon (Sake)",
+      "category": 2,
+      "price": "6.00",
+      "description": "Fresh salmon nigiri",
+      "is_available": true,
+      "image": "menu_images/salmon_nigiri.jpg"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "Salmon (Sake)",
+      "category": 3,
+      "price": "8.00",
+      "description": "Fresh salmon sashimi",
+      "is_available": true,
+      "image": "menu_images/salmon_sashimi.jpg"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "Yellowtail (Hamachi)",
+      "category": 2,
+      "price": "7.00",
+      "description": "Fresh yellow nigiri",
+      "is_available": true,
+      "image": "menu_images/yellow_nigiri.jpg"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "Yellowtail (Hamachi)",
+      "category": 3,
+      "price": "9.00",
+      "description": "Fresh yellow sashimi",
+      "is_available": true,
+      "image": "menu_images/yellow_sashimi.jpg"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "Eel (Unagi)",
+      "category": 2,
+      "price": "7.00",
+      "description": "Grilled water eel nigiri with sweet eel sauce",
+      "is_available": true,
+      "image": "menu_images/eel_nigiri.jpg"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "Eel (Unagi)",
+      "category": 3,
+      "price": "9.00",
+      "description": "Grilled water eel sashimi with sweet eel sauce",
+      "is_available": true,
+      "image": "menu_images/eel_sashimi.jpg"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "Shrimp (Ebi)",
+      "category": 2,
+      "price": "6.00",
+      "description": "Poached shrimp nigiri",
+      "is_available": true,
+      "image": "menu_images/shrimp_nigiri.jpg"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "Shrimp (Ebi)",
+      "category": 3,
+      "price": "8.00",
+      "description": "Poached shrimp sashimi",
+      "is_available": true,
+      "image": "menu_images/shrimp_sashimi.jpg"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "Scallop (Hotate)",
+      "category": 2,
+      "price": "7.00",
+      "description": "Raw scallop nigiri",
+      "is_available": true,
+      "image": "menu_images/scallop_nigiri.jpg"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "Scallop (Hotate)",
+      "category": 3,
+      "price": "9.00",
+      "description": "Raw scallop sashimi",
+      "is_available": true,
+      "image": "menu_images/scallop_sashimi.jpg"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "Tamago (Sweet Egg)",
+      "category": 2,
+      "price": "5.00",
+      "description": "House-made Japanese omelet nigiri",
+      "is_available": true,
+      "image": "menu_images/tamago_nigiri.jpg"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "Tamago (Sweet Egg)",
+      "category": 3,
+      "price": "7.00",
+      "description": "House-made Japanese omelet sashimi",
+      "is_available": true,
+      "image": "menu_images/tamago_sashimi.jpg"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "Sushi Combo A",
+      "category": 5,
+      "price": "7.00",
+      "description": "3 pieces of nigiri (tuna, salmon, shrimp) and 4 pieces of spicy tuna cucumber roll",
+      "is_available": true,
+      "image": "menu_images/sushi_combo_a.jpg"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "Sushi Combo A",
+      "category": 5,
+      "price": "18.00",
+      "description": "3 pieces of nigiri (tuna, salmon, shrimp) and 4 pieces of spicy tuna cucumber tobiko roll",
+      "is_available": true,
+      "image": "menu_images/sushi_combo_a.jpg"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "Sushi Combo B",
+      "category": 5,
+      "price": "22.00",
+      "description": "5 pieces of nigiri (tuna, salmon, shrimp, whitefish, eel), 6 pieces of sashimi (tuna, salmon, yellowtail) and 6 pieces of cream cheese veggie roll",
+      "is_available": true,
+      "image": "menu_images/sushi_combo_b.jpg"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "Sashimi Deluxe",
+      "category": 5,
+      "price": "26.00",
+      "description": "20 pieces of assorted sashimi(tuna, yellowtail)",
+      "is_available": true,
+      "image": "menu_images/sashimi_deluxe.jpg"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "Chirashi Bowl",
+      "category": 5,
+      "price": "20.00",
+      "description": "Variety of sashimi over sushi rice",
+      "is_available": true,
+      "image": "menu_images/chirashi_bowl.jpg"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "Omakase Chef's Choice",
+      "category": 5,
+      "price": "125.00",
+      "description": "Premium seasonal sushi & sashimi chosen by the chef",
+      "is_available": true,
+      "image": "menu_images/omakase.jpg"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "Mochi Ice Cream",
+      "category": 6,
+      "price": "6.00",
+      "description": "3 pieces of mochi (green tea, mango, strawberry)",
+      "is_available": true,
+      "image": "menu_images/mochi_ice_cream.jpg"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "fields": {
+      "name": "Green Tea Cheesecake",
+      "category": 6,
+      "price": "7.00",
+      "description": "Creamy matcha-infused cheesecake with graham cracker crust",
+      "is_available": true,
+      "image": "menu_images/green_tea_cheesecake.jpg"
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 1,
+      "allergen": 1
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 2,
+      "allergen": 1
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 2,
+      "allergen": 2
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 3,
+      "allergen": 1
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 3,
+      "allergen": 2
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 4,
+      "allergen": 8
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 5,
+      "allergen": 1
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 5,
+      "allergen": 2
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 5,
+      "allergen": 3
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 5,
+      "allergen": 4
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 6,
+      "allergen": 1
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 6,
+      "allergen": 2
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 6,
+      "allergen": 3
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 6,
+      "allergen": 4
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 7,
+      "allergen": 1
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 7,
+      "allergen": 2
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 7,
+      "allergen": 3
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 7,
+      "allergen": 5
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 8,
+      "allergen": 1
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 8,
+      "allergen": 2
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 8,
+      "allergen": 4
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 8,
+      "allergen": 6
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 9,
+      "allergen": 4
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 10,
+      "allergen": 1
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 10,
+      "allergen": 2
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 10,
+      "allergen": 4
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 11,
+      "allergen": 1
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 11,
+      "allergen": 2
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 11,
+      "allergen": 4
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 11,
+      "allergen": 5
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 12,
+      "allergen": 1
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 12,
+      "allergen": 2
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 12,
+      "allergen": 4
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 12,
+      "allergen": 5
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 13,
+      "allergen": 8
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 14,
+      "allergen": 4
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 15,
+      "allergen": 4
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 16,
+      "allergen": 4
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 17,
+      "allergen": 4
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 18,
+      "allergen": 4
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 19,
+      "allergen": 4
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 20,
+      "allergen": 4
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 21,
+      "allergen": 4
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 20,
+      "allergen": 1
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 21,
+      "allergen": 1
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 20,
+      "allergen": 2
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 21,
+      "allergen": 2
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 22,
+      "allergen": 5
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 23,
+      "allergen": 5
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 24,
+      "allergen": 5
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 25,
+      "allergen": 5
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 26,
+      "allergen": 1
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 27,
+      "allergen": 1
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 26,
+      "allergen": 2
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 27,
+      "allergen": 2
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 26,
+      "allergen": 6
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 27,
+      "allergen": 6
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 28,
+      "allergen": 1
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 28,
+      "allergen": 2
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 28,
+      "allergen": 3
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 28,
+      "allergen": 4
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 28,
+      "allergen": 5
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 29,
+      "allergen": 1
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 29,
+      "allergen": 2
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 29,
+      "allergen": 3
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 29,
+      "allergen": 4
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 29,
+      "allergen": 5
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 30,
+      "allergen": 4
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 31,
+      "allergen": 1
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 31,
+      "allergen": 4
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 32,
+      "allergen": 1
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 32,
+      "allergen": 4
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 33,
+      "allergen": 7
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 34,
+      "allergen": 7
+    }
+  },
+  {
+    "model": "menu.itemallergen",
+    "fields": {
+      "item": 35,
+      "allergen": 6
+    }
+  }
+]
