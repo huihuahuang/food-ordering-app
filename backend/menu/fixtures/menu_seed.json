@@ -1,6 +1,7 @@
 [
   {
     "model": "menu.menucategory",
+    "pk": 1,
     "fields": {
       "name": "Appetizer",
       "sort_order": 1
@@ -8,6 +9,7 @@
   },
   {
     "model": "menu.menucategory",
+    "pk": 2,
     "fields": {
       "name": "Sushi",
       "sort_order": 2
@@ -15,6 +17,7 @@
   },
   {
     "model": "menu.menucategory",
+    "pk": 3,
     "fields": {
       "name": "Sashimi",
       "sort_order": 3
@@ -22,6 +25,7 @@
   },
   {
     "model": "menu.menucategory",
+    "pk": 4,
     "fields": {
       "name": "Makimono",
       "sort_order": 4
@@ -29,6 +33,7 @@
   },
   {
     "model": "menu.menucategory",
+    "pk": 5,
     "fields": {
       "name": "Combination",
       "sort_order": 5
@@ -36,6 +41,7 @@
   },
   {
     "model": "menu.menucategory",
+    "pk": 6,
     "fields": {
       "name": "Dessert",
       "sort_order": 6
@@ -43,38 +49,47 @@
   },
   {
     "model": "menu.allergen",
+    "pk": 1,
     "fields": { "name": "Soy" }
   },
   {
     "model": "menu.allergen",
+    "pk": 2,
     "fields": { "name": "Gluten" }
   },
   {
     "model": "menu.allergen",
+    "pk": 3,
     "fields": { "name": "Sesame" }
   },
   {
     "model": "menu.allergen",
+    "pk": 4,
     "fields": { "name": "Fish" }
   },
   {
     "model": "menu.allergen",
+    "pk": 5,
     "fields": { "name": "Shellfish" }
   },
   {
     "model": "menu.allergen",
+    "pk": 6,
     "fields": { "name": "Egg" }
   },
   {
     "model": "menu.allergen",
+    "pk": 7,
     "fields": { "name": "Dairy" }
   },
   {
     "model": "menu.allergen",
+    "pk": 8,
     "fields": { "name": "No common allergens" }
   },
   {
     "model": "menu.menuitem",
+    "pk": 1,
     "fields": {
       "name": "Edamame",
       "category": 1,
@@ -86,6 +101,7 @@
   },
   {
     "model": "menu.menuitem",
+    "pk": 2,
     "fields": {
       "name": "Gyoza",
       "category": 1,
@@ -97,6 +113,7 @@
   },
   {
     "model": "menu.menuitem",
+    "pk": 3,
     "fields": {
       "name": "Agedashi Tofu",
       "category": 1,
@@ -108,6 +125,7 @@
   },
   {
     "model": "menu.menuitem",
+    "pk": 4,
     "fields": {
       "name": "Shishito Peppers",
       "category": 1,
@@ -119,6 +137,7 @@
   },
   {
     "model": "menu.menuitem",
+    "pk": 5,
     "fields": {
       "name": "Tuna Tataki",
       "category": 1,
@@ -130,6 +149,7 @@
   },
   {
     "model": "menu.menuitem",
+    "pk": 6,
     "fields": {
       "name": "Salmon Carpaccio",
       "category": 1,
@@ -141,6 +161,7 @@
   },
   {
     "model": "menu.menuitem",
+    "pk": 7,
     "fields": {
       "name": "California Roll",
       "category": 4,
@@ -152,6 +173,7 @@
   },
   {
     "model": "menu.menuitem",
+    "pk": 8,
     "fields": {
       "name": "Spicy Tuna Roll",
       "category": 4,
@@ -163,6 +185,7 @@
   },
   {
     "model": "menu.menuitem",
+    "pk": 9,
     "fields": {
       "name": "Salmon Avocado Roll",
       "category": 4,
@@ -174,6 +197,7 @@
   },
   {
     "model": "menu.menuitem",
+    "pk": 10,
     "fields": {
       "name": "Eel Cucumber Roll",
       "category": 4,
@@ -185,17 +209,19 @@
   },
   {
     "model": "menu.menuitem",
+    "pk": 11,
     "fields": {
       "name": "Rainbow Roll",
       "category": 4,
       "price": "13.00",
-      "description": "California roll toppped with assorted sashimi",
+      "description": "California roll topped with assorted sashimi",
       "is_available": true,
       "image": "menu_images/rainbow_maki.jpg"
     }
   },
   {
     "model": "menu.menuitem",
+    "pk": 12,
     "fields": {
       "name": "Dragon Roll",
       "category": 4,
@@ -207,11 +233,12 @@
   },
   {
     "model": "menu.menuitem",
+    "pk": 13,
     "fields": {
       "name": "Vegetable Roll",
       "category": 4,
       "price": "8.00",
-      "description": "Cucumber, avvocado, oshinko, and carrot",
+      "description": "Cucumber, avocado, oshinko, and carrot",
       "is_available": true,
       "image": "menu_images/vegetable_maki.jpg"
     }
@@ -219,6 +246,7 @@
 
   {
     "model": "menu.menuitem",
+    "pk": 14,
     "fields": {
       "name": "Tuna (Maguro)",
       "category": 2,
@@ -230,17 +258,19 @@
   },
   {
     "model": "menu.menuitem",
+    "pk": 15,
     "fields": {
       "name": "Tuna (Maguro)",
       "category": 3,
       "price": "9.00",
-      "description": "Learn tuna sashimi",
+      "description": "Lean tuna sashimi",
       "is_available": true,
       "image": "menu_images/tuna_sashimi.jpg"
     }
   },
   {
     "model": "menu.menuitem",
+    "pk": 16,
     "fields": {
       "name": "Salmon (Sake)",
       "category": 2,
@@ -252,6 +282,7 @@
   },
   {
     "model": "menu.menuitem",
+    "pk": 17,
     "fields": {
       "name": "Salmon (Sake)",
       "category": 3,
@@ -263,6 +294,7 @@
   },
   {
     "model": "menu.menuitem",
+    "pk": 18,
     "fields": {
       "name": "Yellowtail (Hamachi)",
       "category": 2,
@@ -274,6 +306,7 @@
   },
   {
     "model": "menu.menuitem",
+    "pk": 19,
     "fields": {
       "name": "Yellowtail (Hamachi)",
       "category": 3,
@@ -285,6 +318,7 @@
   },
   {
     "model": "menu.menuitem",
+    "pk": 20,
     "fields": {
       "name": "Eel (Unagi)",
       "category": 2,
@@ -296,6 +330,7 @@
   },
   {
     "model": "menu.menuitem",
+    "pk": 21,
     "fields": {
       "name": "Eel (Unagi)",
       "category": 3,
@@ -307,6 +342,7 @@
   },
   {
     "model": "menu.menuitem",
+    "pk": 22,
     "fields": {
       "name": "Shrimp (Ebi)",
       "category": 2,
@@ -318,6 +354,7 @@
   },
   {
     "model": "menu.menuitem",
+    "pk": 23,
     "fields": {
       "name": "Shrimp (Ebi)",
       "category": 3,
@@ -329,6 +366,7 @@
   },
   {
     "model": "menu.menuitem",
+    "pk": 24,
     "fields": {
       "name": "Scallop (Hotate)",
       "category": 2,
@@ -340,6 +378,7 @@
   },
   {
     "model": "menu.menuitem",
+    "pk": 25,
     "fields": {
       "name": "Scallop (Hotate)",
       "category": 3,
@@ -351,6 +390,7 @@
   },
   {
     "model": "menu.menuitem",
+    "pk": 26,
     "fields": {
       "name": "Tamago (Sweet Egg)",
       "category": 2,
@@ -362,6 +402,7 @@
   },
   {
     "model": "menu.menuitem",
+    "pk": 27,
     "fields": {
       "name": "Tamago (Sweet Egg)",
       "category": 3,
@@ -373,6 +414,7 @@
   },
   {
     "model": "menu.menuitem",
+    "pk": 28,
     "fields": {
       "name": "Sushi Combo A",
       "category": 5,
@@ -384,17 +426,7 @@
   },
   {
     "model": "menu.menuitem",
-    "fields": {
-      "name": "Sushi Combo A",
-      "category": 5,
-      "price": "18.00",
-      "description": "3 pieces of nigiri (tuna, salmon, shrimp) and 4 pieces of spicy tuna cucumber tobiko roll",
-      "is_available": true,
-      "image": "menu_images/sushi_combo_a.jpg"
-    }
-  },
-  {
-    "model": "menu.menuitem",
+    "pk": 29,
     "fields": {
       "name": "Sushi Combo B",
       "category": 5,
@@ -406,6 +438,7 @@
   },
   {
     "model": "menu.menuitem",
+    "pk": 30,
     "fields": {
       "name": "Sashimi Deluxe",
       "category": 5,
@@ -417,6 +450,7 @@
   },
   {
     "model": "menu.menuitem",
+    "pk": 31,
     "fields": {
       "name": "Chirashi Bowl",
       "category": 5,
@@ -428,6 +462,7 @@
   },
   {
     "model": "menu.menuitem",
+    "pk": 32,
     "fields": {
       "name": "Omakase Chef's Choice",
       "category": 5,
@@ -439,6 +474,7 @@
   },
   {
     "model": "menu.menuitem",
+    "pk": 33,
     "fields": {
       "name": "Mochi Ice Cream",
       "category": 6,
@@ -450,6 +486,7 @@
   },
   {
     "model": "menu.menuitem",
+    "pk": 34,
     "fields": {
       "name": "Green Tea Cheesecake",
       "category": 6,
@@ -461,6 +498,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 1,
     "fields": {
       "item": 1,
       "allergen": 1
@@ -468,6 +506,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 2,
     "fields": {
       "item": 2,
       "allergen": 1
@@ -475,6 +514,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 3,
     "fields": {
       "item": 2,
       "allergen": 2
@@ -482,6 +522,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 4,
     "fields": {
       "item": 3,
       "allergen": 1
@@ -489,6 +530,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 5,
     "fields": {
       "item": 3,
       "allergen": 2
@@ -496,6 +538,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 6,
     "fields": {
       "item": 4,
       "allergen": 8
@@ -503,6 +546,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 7,
     "fields": {
       "item": 5,
       "allergen": 1
@@ -510,6 +554,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 8,
     "fields": {
       "item": 5,
       "allergen": 2
@@ -517,6 +562,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 9,
     "fields": {
       "item": 5,
       "allergen": 3
@@ -524,6 +570,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 10,
     "fields": {
       "item": 5,
       "allergen": 4
@@ -531,6 +578,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 11,
     "fields": {
       "item": 6,
       "allergen": 1
@@ -538,6 +586,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 12,
     "fields": {
       "item": 6,
       "allergen": 2
@@ -545,6 +594,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 13,
     "fields": {
       "item": 6,
       "allergen": 3
@@ -552,6 +602,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 14,
     "fields": {
       "item": 6,
       "allergen": 4
@@ -559,6 +610,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 15,
     "fields": {
       "item": 7,
       "allergen": 1
@@ -566,6 +618,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 16,
     "fields": {
       "item": 7,
       "allergen": 2
@@ -573,6 +626,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 17,
     "fields": {
       "item": 7,
       "allergen": 3
@@ -580,6 +634,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 18,
     "fields": {
       "item": 7,
       "allergen": 5
@@ -587,6 +642,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 19,
     "fields": {
       "item": 8,
       "allergen": 1
@@ -594,6 +650,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 20,
     "fields": {
       "item": 8,
       "allergen": 2
@@ -601,6 +658,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 21,
     "fields": {
       "item": 8,
       "allergen": 4
@@ -608,6 +666,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 22,
     "fields": {
       "item": 8,
       "allergen": 6
@@ -615,6 +674,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 23,
     "fields": {
       "item": 9,
       "allergen": 4
@@ -622,6 +682,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 24,
     "fields": {
       "item": 10,
       "allergen": 1
@@ -629,6 +690,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 25,
     "fields": {
       "item": 10,
       "allergen": 2
@@ -636,6 +698,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 26,
     "fields": {
       "item": 10,
       "allergen": 4
@@ -643,6 +706,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 27,
     "fields": {
       "item": 11,
       "allergen": 1
@@ -650,6 +714,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 28,
     "fields": {
       "item": 11,
       "allergen": 2
@@ -657,6 +722,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 29,
     "fields": {
       "item": 11,
       "allergen": 4
@@ -664,6 +730,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 30,
     "fields": {
       "item": 11,
       "allergen": 5
@@ -671,6 +738,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 31,
     "fields": {
       "item": 12,
       "allergen": 1
@@ -678,6 +746,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 32,
     "fields": {
       "item": 12,
       "allergen": 2
@@ -685,6 +754,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 33,
     "fields": {
       "item": 12,
       "allergen": 4
@@ -692,6 +762,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 34,
     "fields": {
       "item": 12,
       "allergen": 5
@@ -699,6 +770,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 35,
     "fields": {
       "item": 13,
       "allergen": 8
@@ -706,6 +778,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 36,
     "fields": {
       "item": 14,
       "allergen": 4
@@ -713,6 +786,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 37,
     "fields": {
       "item": 15,
       "allergen": 4
@@ -720,6 +794,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 38,
     "fields": {
       "item": 16,
       "allergen": 4
@@ -727,6 +802,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 39,
     "fields": {
       "item": 17,
       "allergen": 4
@@ -734,6 +810,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 40,
     "fields": {
       "item": 18,
       "allergen": 4
@@ -741,6 +818,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 41,
     "fields": {
       "item": 19,
       "allergen": 4
@@ -748,6 +826,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 42,
     "fields": {
       "item": 20,
       "allergen": 4
@@ -755,6 +834,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 43,
     "fields": {
       "item": 21,
       "allergen": 4
@@ -762,6 +842,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 44,
     "fields": {
       "item": 20,
       "allergen": 1
@@ -769,6 +850,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 45,
     "fields": {
       "item": 21,
       "allergen": 1
@@ -776,6 +858,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 46,
     "fields": {
       "item": 20,
       "allergen": 2
@@ -783,6 +866,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 47,
     "fields": {
       "item": 21,
       "allergen": 2
@@ -790,6 +874,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 48,
     "fields": {
       "item": 22,
       "allergen": 5
@@ -797,6 +882,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 49,
     "fields": {
       "item": 23,
       "allergen": 5
@@ -804,6 +890,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 50,
     "fields": {
       "item": 24,
       "allergen": 5
@@ -811,6 +898,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 51,
     "fields": {
       "item": 25,
       "allergen": 5
@@ -818,6 +906,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 52,
     "fields": {
       "item": 26,
       "allergen": 1
@@ -825,6 +914,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 53,
     "fields": {
       "item": 27,
       "allergen": 1
@@ -832,6 +922,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 54,
     "fields": {
       "item": 26,
       "allergen": 2
@@ -839,6 +930,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 55,
     "fields": {
       "item": 27,
       "allergen": 2
@@ -846,6 +938,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 56,
     "fields": {
       "item": 26,
       "allergen": 6
@@ -853,6 +946,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 57,
     "fields": {
       "item": 27,
       "allergen": 6
@@ -860,6 +954,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 58,
     "fields": {
       "item": 28,
       "allergen": 1
@@ -867,6 +962,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 59,
     "fields": {
       "item": 28,
       "allergen": 2
@@ -874,6 +970,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 60,
     "fields": {
       "item": 28,
       "allergen": 3
@@ -881,6 +978,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 61,
     "fields": {
       "item": 28,
       "allergen": 4
@@ -888,6 +986,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 62,
     "fields": {
       "item": 28,
       "allergen": 5
@@ -895,6 +994,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 63,
     "fields": {
       "item": 29,
       "allergen": 1
@@ -902,6 +1002,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 64,
     "fields": {
       "item": 29,
       "allergen": 2
@@ -909,6 +1010,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 65,
     "fields": {
       "item": 29,
       "allergen": 3
@@ -916,6 +1018,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 66,
     "fields": {
       "item": 29,
       "allergen": 4
@@ -923,6 +1026,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 67,
     "fields": {
       "item": 29,
       "allergen": 5
@@ -930,6 +1034,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 68,
     "fields": {
       "item": 30,
       "allergen": 4
@@ -937,6 +1042,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 69,
     "fields": {
       "item": 31,
       "allergen": 1
@@ -944,6 +1050,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 70,
     "fields": {
       "item": 31,
       "allergen": 4
@@ -951,6 +1058,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 71,
     "fields": {
       "item": 32,
       "allergen": 1
@@ -958,6 +1066,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 72,
     "fields": {
       "item": 32,
       "allergen": 4
@@ -965,6 +1074,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 73,
     "fields": {
       "item": 33,
       "allergen": 7
@@ -972,6 +1082,7 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 74,
     "fields": {
       "item": 34,
       "allergen": 7
@@ -979,8 +1090,9 @@
   },
   {
     "model": "menu.itemallergen",
+    "pk": 75,
     "fields": {
-      "item": 35,
+      "item": 34,
       "allergen": 6
     }
   }
